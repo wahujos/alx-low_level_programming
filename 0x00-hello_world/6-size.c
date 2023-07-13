@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	puts("Size of a char: ", sizeof(char)," byte(s)");
-	puts("Size of an int: ", sizeof(int)," byte(s)");
-	puts("Size of a long int: ", sizeof(long)," byte(s)");
-	puts("Size of a long long int: ", sizeof(long long)," byte(s)");
-	puts("Size of a float: ", sizeof(float)," byte(s)");
+	printf("Size of a char: ", sizeof(char)," byte(s)\n");
+	printf("Size of an int: ", sizeof(int)," byte(s)\n");
+	printf("Size of a long int: ", sizeof(long)," byte(s)\n");
+	printf("Size of a long long int: ", sizeof(long long)," byte(s)\n");
+	printf("Size of a float: ", sizeof(float)," byte(s)\n");
 	return (0);
 }
