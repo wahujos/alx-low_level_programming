@@ -7,12 +7,13 @@
  */
 int main(void)
 {
-	char i = 0;
+	char i;
+	int j = 0;
 
-	while (i < 10)
+	while (j < 10)
 	{
-		putchar(i);
-		i++;
+		putchar(j);
+		j++;
 	}
 	i = 'a';
 	while (i <= 'f')
