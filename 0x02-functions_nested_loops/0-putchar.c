@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- * putcharacter - Program that prints _putchar
+ * main - Program that prints _putchar
+ *
+ * Return: Always 0 (Success)
  */
-int putchar(void)
+int main(void)
 {
-	char output[] = "_putchar";
-
-	int arraysize = sizeof(output) / sizeof(output[0]);
-
-	for (int i = 0; i < arraysize; i++)
-	{
-		putchar(i);
-	}
-	putchar ('\n');
-	return 0;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }
