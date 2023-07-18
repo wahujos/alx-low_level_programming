@@ -8,7 +8,7 @@
 void print_to_98(int n)
 {
 	int c;
-
+		
 	for (c = n; c <= 98; c++)
 	{
 		if (c < 98)
@@ -17,7 +17,8 @@ void print_to_98(int n)
 		}
 		else
 		{
-			printf("%d", c);
+			printf("%d\n", c);
 		}
+		printf("\n");
 	}
 }
