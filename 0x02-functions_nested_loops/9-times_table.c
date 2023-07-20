@@ -18,14 +18,14 @@ void times_table(void)
 			{
 				_putchar(mul + '0');
 			}
-			if((mul < 10) && (b != 0))
+			if ((mul < 10) && (b != 0))
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(mul + '0');
 			}
-			else if(mul >= 10)
+			else if (mul >= 10)
 			{
 				_putchar(',');
 				_putchar(' ');
