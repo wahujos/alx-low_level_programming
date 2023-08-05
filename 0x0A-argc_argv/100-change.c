@@ -4,7 +4,7 @@
  * main - start execution
  * @argc: count
  * @argv: pointer
- * Return:
+ * Return: success (0) 1 otherwise
  */
 int main(int argc, char *argv[])
 {
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	else if (atoi(argv[1]) == 0)
 	{
 		printf("Error\n");
-                return (1);
+		return (1);
 	}
 	else
 	{
@@ -38,14 +38,12 @@ int main(int argc, char *argv[])
 		else if (num % 25 != 0)
 		{
 			change = (num / 25) + (num % 25);
-		}else if (num % 10 != 0)
+		}
+		else if (num % 10 != 0)
 		{
 			change = (num / 10) + (num % 10);
 		}
-	
 		printf("%d\n", change);
 	}
 	return (0);
 }
-			
-
