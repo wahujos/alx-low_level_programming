@@ -35,7 +35,7 @@ void print_all(const char * const format, ...)
 				{
 					s = "(nil)";
 				}
-					printf("%s%s", sp, s);	
+					printf("%s%s", sp, s);
 				break;
 			default:
 				k++;
@@ -48,4 +48,3 @@ void print_all(const char * const format, ...)
 	va_end(input);
 	printf("\n");
 }
-		
