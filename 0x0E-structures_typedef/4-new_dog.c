@@ -11,20 +11,21 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *another_dog;
-	another_dog =(struct dog *)malloc(sizeof(struct dog));
-	if(another_dog == NULL)
+	dog_t *another_dog;
+
+	another_dog = (struct dog *)malloc(sizeof(struct dog));
+	if (another_dog == NULL)
 	{
 		return (NULL);
 	}
 	another_dog->name = malloc(strlen(name) + 1);
-	if(another_dog->name == NULL)
+	if (another_dog->name == NULL)
 	{
 		free(another_dog);
 		return (NULL);
 	}
 	another_dog->owner = malloc(strlen(name) + 1);
-	if(another_dog->owner == NULL)
+	if (another_dog->owner == NULL)
 	{
 		free(another_dog->name);
 		free(another_dog);
@@ -33,5 +34,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	strcpy(another_dog->name, name);
 	strcpy(another_dog->owner, owner);
 	another_dog->age = age;
-	return another_dog;
+	return (another_dog);
 }
