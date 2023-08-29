@@ -30,6 +30,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 			trv = trv->next;
 		}
 		trv->next = ptr;
-		return(trv->next);
+		return (trv->next);
 	}
 }
