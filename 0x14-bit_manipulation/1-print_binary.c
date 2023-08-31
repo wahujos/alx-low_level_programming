@@ -5,18 +5,20 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i, value;
+	unsigned long int i;
 
-	for (i = 31; i >= 0; i--)
+	if(n == 0)
 	{
-		value = n >> i;
-		if (value & 1)
-		{
+		_putchar('0');
+	}
+	i = 1UL << (sizeof(unsigned long int) *8 - 1);
+
+	while (i > 0)
+	{
+		if (n & i)
 			_putchar('1');
-		}
 		else
-		{
 			_putchar('0');
-		}
+		i >>= 1;
 	}
 }
