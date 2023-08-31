@@ -8,7 +8,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int rem;
+	int rem, i;
 	unsigned int number = 0;
 	unsigned int power = 1;
 	int decimal;
@@ -16,6 +16,13 @@ unsigned int binary_to_uint(const char *b)
 	if (b == NULL)
 	{
 		return (0);
+	}
+	for (i = 0; b[i] != '\0'; i++)
+	{
+		if (b[i] != '0' && b[i] != '1')
+		{
+			return (0);
+		}
 	}
 	decimal = atoi(b);
 	while (decimal != 0)
