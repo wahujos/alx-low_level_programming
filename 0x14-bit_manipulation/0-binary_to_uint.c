@@ -8,10 +8,10 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int rem, i;
+	int rem, i;
 	unsigned int number = 0;
 	unsigned int power = 1;
-	unsigned int decimal;
+	int decimal;
 
 	if (b == NULL)
 	{
