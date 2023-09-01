@@ -16,5 +16,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		flips += result & 1;
 		result >>= 1;
 	}
-	return flips;
+	return (flips);
 }
