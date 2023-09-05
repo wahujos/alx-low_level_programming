@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		perror("Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	fd_to = open(argv[2], O_WRONLY | O_TRUNC);
+	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 664);
 	if (fd_to == -1)
 	{
 		perror("Error: Can't write to file");
