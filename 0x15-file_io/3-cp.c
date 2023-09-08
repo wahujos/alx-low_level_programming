@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		perror("Cant't write to file");
 		return (99);
 	}
-	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC , S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
 	if (fd_to == -1)
 	{
 		perror("Error: cant write to file");
