@@ -15,8 +15,6 @@ void hash_table_print(const hash_table_t *ht)
 		for (c = 0; c < ht->size; c++)
 		{
 			pointer = ht->array[c];
-			if (pointer != NULL)
-			{
 				while (pointer != NULL)
 				{
 					if (printed > 0)
@@ -25,7 +23,6 @@ void hash_table_print(const hash_table_t *ht)
 					printed = 1;
 					pointer = pointer->next;
 				}
-			}
 		}
 	}
 	printf("}\n");
