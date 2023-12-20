@@ -1,0 +1,4 @@
+#This is my first make file
+
+all: school.c main.c
+	gcc main.c school.c -o school
